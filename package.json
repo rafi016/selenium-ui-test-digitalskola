@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/loginTestScreenshot.js -t 0",
+    "test:all" : "mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "canvas": "^3.1.0",
+    "resemblejs": "^5.0.0",
     "selenium-webdriver": "^4.28.1"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0"
   }
 }
